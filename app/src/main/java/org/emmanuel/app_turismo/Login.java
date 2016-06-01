@@ -47,7 +47,7 @@ public class Login extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
                         try{
-                            JSONArray listaUsuarios=response.getJSONArray("data");
+                            JSONArray listaUsuarios=response.getJSONArray("user");
                             if(listaUsuarios.length()>0){
                                 //Toast.makeText(getApplicationContext(),"Bienvenido",Toast.LENGTH_LONG).show();
                                 JSONObject user=listaUsuarios.getJSONObject(0);
